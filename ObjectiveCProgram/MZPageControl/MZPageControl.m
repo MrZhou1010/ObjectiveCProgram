@@ -54,7 +54,6 @@
     self.pageBorderWidth = 1.0;
     self.currentPageBorderColor = [UIColor grayColor];
     self.currentPageBorderWidth = 1.0;
-    
     self.isClickEnable = YES;
 }
 
@@ -217,7 +216,7 @@
             pageX = self.frame.size.width - totalW - self.pageSpacing;
             break;
         case AlignmentCenter:
-            pageX = (self.frame.size.width - totalW) / 2 + self.pageSpacing;
+            pageX = (self.frame.size.width - totalW) / 2.0 + self.pageSpacing;
             break;
         default:
             break;
@@ -234,7 +233,7 @@
         CGRect frame = [self getFrame:i];
         UIImageView *imageView = (UIImageView *)self.pages[i];
         imageView.frame = frame;
-        CGFloat radius = self.pageCornerRadius == 0 ? frame.size.height / 2 : self.pageCornerRadius;
+        CGFloat radius = self.pageCornerRadius == 0 ? frame.size.height / 2.0 : self.pageCornerRadius;
         if (i == self.currentPage) {
             if (self.currentPageImage) {
                 radius = 0;

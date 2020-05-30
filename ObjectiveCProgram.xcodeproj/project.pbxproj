@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AF0BE230A5C8219E48D068E /* libPods-ObjectiveCProgram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0FD7F8853EF5A88B8DA015 /* libPods-ObjectiveCProgram.a */; };
+		B41900BA248233E0008D2B34 /* MZWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B41900B9248233E0008D2B34 /* MZWebSocketManager.m */; };
 		B42A0D7B246CE3F000C2F9A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42A0D7A246CE3F000C2F9A9 /* AppDelegate.m */; };
 		B42A0D7E246CE3F000C2F9A9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42A0D7D246CE3F000C2F9A9 /* SceneDelegate.m */; };
 		B42A0D81246CE3F000C2F9A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42A0D80246CE3F000C2F9A9 /* ViewController.m */; };
@@ -70,6 +71,8 @@
 
 /* Begin PBXFileReference section */
 		9AAB5AD8F937A1B75C49E307 /* Pods-ObjectiveCProgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCProgram.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveCProgram/Pods-ObjectiveCProgram.release.xcconfig"; sourceTree = "<group>"; };
+		B41900B8248233E0008D2B34 /* MZWebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZWebSocketManager.h; sourceTree = "<group>"; };
+		B41900B9248233E0008D2B34 /* MZWebSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZWebSocketManager.m; sourceTree = "<group>"; };
 		B42A0D76246CE3F000C2F9A9 /* ObjectiveCProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42A0D79246CE3F000C2F9A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B42A0D7A246CE3F000C2F9A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,6 +200,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B41900B7248233A6008D2B34 /* MZWebSocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				B41900B8248233E0008D2B34 /* MZWebSocketManager.h */,
+				B41900B9248233E0008D2B34 /* MZWebSocketManager.m */,
+			);
+			path = MZWebSocketManager;
+			sourceTree = "<group>";
+		};
 		B42A0D6D246CE3F000C2F9A9 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +234,7 @@
 		B42A0D78246CE3F000C2F9A9 /* ObjectiveCProgram */ = {
 			isa = PBXGroup;
 			children = (
+				B41900B7248233A6008D2B34 /* MZWebSocketManager */,
 				B43B5E4E246FBF900059E663 /* MZListMenu */,
 				B43B5E3D246FB9260059E663 /* MZRadarChart */,
 				B43B5E27246FB7ED0059E663 /* MZExtension */,
@@ -618,6 +631,7 @@
 				B43B5E66246FC16B0059E663 /* MZListMenuTableVC.m in Sources */,
 				B43B5E5C246FBFBA0059E663 /* MZListMenuItem.m in Sources */,
 				B42A0DD4246D34DA00C2F9A9 /* MZAuthentication.m in Sources */,
+				B41900BA248233E0008D2B34 /* MZWebSocketManager.m in Sources */,
 				B43B5E5B246FBFBA0059E663 /* MZListMenuConfiguration.m in Sources */,
 				B43B5E3B246FB8130059E663 /* UITextView+PlaceHolder.m in Sources */,
 				B43B5E5F246FBFBA0059E663 /* MZListMenuView.m in Sources */,
