@@ -17,10 +17,10 @@ PODS:
   - IQKeyboardManager (6.5.5)
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
-  - MJRefresh (3.2.3)
-  - SDWebImage (5.8.0):
-    - SDWebImage/Core (= 5.8.0)
-  - SDWebImage/Core (5.8.0)
+  - MJRefresh (3.4.3)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
   - SocketRocket (0.5.1)
 
 DEPENDENCIES:
@@ -47,10 +47,10 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
-  MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
-  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: f1fbe60c77e6a62c076a40ffc891bf51c0099309
+PODFILE CHECKSUM: 8040d8048b9722c951a5d70314fea8b00fd00038
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
