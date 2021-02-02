@@ -180,11 +180,9 @@
 
 #pragma mark - 助手方法
 /**
- *  返回二进制 Bytes 流的字符串表示形式
- *
- *  @param bytes  二进制 Bytes 数组
+ *  返回二进制Bytes流的字符串表示形式
+ *  @param bytes  二进制Bytes数组
  *  @param length 数组长度
- *
  *  @return 字符串表示形式
  */
 - (NSString *)stringFromBytes:(uint8_t *)bytes length:(int)length {

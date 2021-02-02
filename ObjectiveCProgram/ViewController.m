@@ -14,6 +14,7 @@
 #import "MZAuthenticationVC.h"
 #import "MZRadarChartVC.h"
 #import "MZListMenuVC.h"
+#import "MZSliderVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -24,19 +25,33 @@
 
 @implementation ViewController
 
-#pragma mark - Lazy
+#pragma mark - lazy
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.tableFooterView = [[UIView alloc] init];
     }
     return _tableView;
 }
 
+- (NSArray *)dataSource {
+    if (!_dataSource) {
+        _dataSource = @[@"二维码扫描及生成",
+                        @"版本控制（版本检测、版本更新）",
+                        @"自定义PageControl",
+                        @"提示框相关",
+                        @"身份认证(指纹、面容)",
+                        @"雷达图表",
+                        @"带三角的弹框选择视图",
+                        @"自定义Slider"];
+    }
+    return _dataSource;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"ObjectiveCProgram";
     [self setupUI];
@@ -46,8 +61,6 @@
     self.tableView.frame = self.view.bounds;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellIdentifier"];
     [self.view addSubview:self.tableView];
-    self.dataSource = @[@"二维码扫描及生成", @"版本控制（版本检测、版本更新）", @"自定义PageControl", @"提示框相关", @"身份认证(指纹、面容)", @"雷达图表", @"带三角的弹框选择视图"];
-    self.tableView.tableFooterView = [UIView new];
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -61,12 +74,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50.0;
+    return 60.0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -91,6 +106,9 @@
     } else if (indexPath.row == 6) {
         MZListMenuVC *codeVC = [[MZListMenuVC alloc] init];
         [self.navigationController pushViewController:codeVC animated:YES];
+    } else if (indexPath.row == 7) {
+        MZSliderVC *sliderVC = [[MZSliderVC alloc] init];
+        [self.navigationController pushViewController:sliderVC animated:YES];
     }
 }
 

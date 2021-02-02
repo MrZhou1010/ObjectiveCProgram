@@ -9,4 +9,5 @@ Objective-C Program
 5.身份认证(指纹、面容)；
 6.雷达图表；
 7.带三角的弹框选择视图；
-8.WebSocket管理。
+8.WebSocket管理;
+9.自定义Slider。

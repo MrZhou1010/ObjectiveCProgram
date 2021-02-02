@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"带三角的弹框选择视图";
 }
@@ -29,7 +28,7 @@
     [MZListMenu dismissListMenuInView:self.view isAnimation:NO];
 }
 
-#pragma mark - Table view data source
+#pragma mark - UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }

@@ -25,7 +25,9 @@
 
 /// 设置某几个角的圆角
 - (void)setCorner:(UIRectCorner)rectCorners radii:(CGFloat)radii {
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorners cornerRadii:CGSizeMake(radii, radii)];
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                                   byRoundingCorners:rectCorners
+                                                         cornerRadii:CGSizeMake(radii, radii)];
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
     maskLayer.frame = self.bounds;
     maskLayer.path = maskPath.CGPath;
