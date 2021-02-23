@@ -50,12 +50,12 @@
 		B43B5E5E246FBFBA0059E663 /* MZListMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E56246FBFBA0059E663 /* MZListMenu.m */; };
 		B43B5E5F246FBFBA0059E663 /* MZListMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E59246FBFBA0059E663 /* MZListMenuView.m */; };
 		B43B5E60246FBFBA0059E663 /* UIView+MZListMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E5A246FBFBA0059E663 /* UIView+MZListMenu.m */; };
-		B43B5E63246FC0DE0059E663 /* MZListMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E62246FC0DE0059E663 /* MZListMenuVC.m */; };
-		B43B5E66246FC16B0059E663 /* MZListMenuTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E65246FC16B0059E663 /* MZListMenuTableVC.m */; };
 		B44463BB25C8F6BD00981A66 /* MZSliderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B44463BA25C8F6BD00981A66 /* MZSliderVC.m */; };
 		B489122125B023D600EF10E7 /* MZCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B489121C25B023D600EF10E7 /* MZCodeScanVC.m */; };
 		B489122225B023D600EF10E7 /* MZBarCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B489121D25B023D600EF10E7 /* MZBarCodeVC.m */; };
 		B489122325B023D600EF10E7 /* MZQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B489121F25B023D600EF10E7 /* MZQRCodeVC.m */; };
+		B49ACE5225E4AB4D00051EF9 /* MZListMenuTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ACE4E25E4AB4D00051EF9 /* MZListMenuTableVC.m */; };
+		B49ACE5325E4AB4D00051EF9 /* MZListMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ACE5125E4AB4D00051EF9 /* MZListMenuVC.m */; };
 		B49E999625C7A19D000B5D3F /* NSString+MZSizeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B49E999525C7A19D000B5D3F /* NSString+MZSizeExtension.m */; };
 		B49E99A725C7A4FD000B5D3F /* UIButton+MZEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = B49E99A625C7A4FD000B5D3F /* UIButton+MZEdgeInsets.m */; };
 		B49E99AE25C7A899000B5D3F /* UIColor+MZHexExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B49E99AD25C7A899000B5D3F /* UIColor+MZHexExtension.m */; };
@@ -166,18 +166,19 @@
 		B43B5E58246FBFBA0059E663 /* MZListMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZListMenuItem.h; sourceTree = "<group>"; };
 		B43B5E59246FBFBA0059E663 /* MZListMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZListMenuView.m; sourceTree = "<group>"; };
 		B43B5E5A246FBFBA0059E663 /* UIView+MZListMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MZListMenu.m"; sourceTree = "<group>"; };
-		B43B5E61246FC0DE0059E663 /* MZListMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZListMenuVC.h; sourceTree = "<group>"; };
-		B43B5E62246FC0DE0059E663 /* MZListMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZListMenuVC.m; sourceTree = "<group>"; };
-		B43B5E64246FC16B0059E663 /* MZListMenuTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZListMenuTableVC.h; sourceTree = "<group>"; };
-		B43B5E65246FC16B0059E663 /* MZListMenuTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZListMenuTableVC.m; sourceTree = "<group>"; };
 		B44463B925C8F6BD00981A66 /* MZSliderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZSliderVC.h; sourceTree = "<group>"; };
 		B44463BA25C8F6BD00981A66 /* MZSliderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZSliderVC.m; sourceTree = "<group>"; };
+		B47CE4FB25E0EAED00D851E6 /* MZMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZMacro.h; sourceTree = "<group>"; };
 		B489121B25B023D500EF10E7 /* MZCodeScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZCodeScanVC.h; sourceTree = "<group>"; };
 		B489121C25B023D600EF10E7 /* MZCodeScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZCodeScanVC.m; sourceTree = "<group>"; };
 		B489121D25B023D600EF10E7 /* MZBarCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZBarCodeVC.m; sourceTree = "<group>"; };
 		B489121E25B023D600EF10E7 /* MZQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZQRCodeVC.h; sourceTree = "<group>"; };
 		B489121F25B023D600EF10E7 /* MZQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZQRCodeVC.m; sourceTree = "<group>"; };
 		B489122025B023D600EF10E7 /* MZBarCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZBarCodeVC.h; sourceTree = "<group>"; };
+		B49ACE4E25E4AB4D00051EF9 /* MZListMenuTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZListMenuTableVC.m; sourceTree = "<group>"; };
+		B49ACE4F25E4AB4D00051EF9 /* MZListMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZListMenuVC.h; sourceTree = "<group>"; };
+		B49ACE5025E4AB4D00051EF9 /* MZListMenuTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZListMenuTableVC.h; sourceTree = "<group>"; };
+		B49ACE5125E4AB4D00051EF9 /* MZListMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZListMenuVC.m; sourceTree = "<group>"; };
 		B49E999425C7A19D000B5D3F /* NSString+MZSizeExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MZSizeExtension.h"; sourceTree = "<group>"; };
 		B49E999525C7A19D000B5D3F /* NSString+MZSizeExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MZSizeExtension.m"; sourceTree = "<group>"; };
 		B49E99A525C7A4FD000B5D3F /* UIButton+MZEdgeInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MZEdgeInsets.h"; sourceTree = "<group>"; };
@@ -289,7 +290,8 @@
 		B42A0D78246CE3F000C2F9A9 /* ObjectiveCProgram */ = {
 			isa = PBXGroup;
 			children = (
-				B489121A25B0133000EF10E7 /* Tool */,
+				B47CE4F725E0E9AA00D851E6 /* Macro(宏) */,
+				B489121A25B0133000EF10E7 /* Tool(工具) */,
 				B489121925B0132300EF10E7 /* UI */,
 				B43B5E27246FB7ED0059E663 /* MZExtension */,
 				B42A0DBC246D238A00C2F9A9 /* ViewController */,
@@ -342,6 +344,7 @@
 		B42A0DBC246D238A00C2F9A9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B49ACE4D25E4AAFD00051EF9 /* MZListMenu */,
 				B43C167125C3A4F20097BDCE /* MZCode */,
 				B42A0DC7246D2AB800C2F9A9 /* MZVersionControlVC.h */,
 				B42A0DC8246D2AB800C2F9A9 /* MZVersionControlVC.m */,
@@ -353,10 +356,6 @@
 				B42A0DE2246D39A200C2F9A9 /* MZToastVC.m */,
 				B43B5E4B246FBC0F0059E663 /* MZRadarChartVC.h */,
 				B43B5E4C246FBC0F0059E663 /* MZRadarChartVC.m */,
-				B43B5E61246FC0DE0059E663 /* MZListMenuVC.h */,
-				B43B5E62246FC0DE0059E663 /* MZListMenuVC.m */,
-				B43B5E64246FC16B0059E663 /* MZListMenuTableVC.h */,
-				B43B5E65246FC16B0059E663 /* MZListMenuTableVC.m */,
 				B44463B925C8F6BD00981A66 /* MZSliderVC.h */,
 				B44463BA25C8F6BD00981A66 /* MZSliderVC.m */,
 			);
@@ -504,6 +503,14 @@
 			path = MZCode;
 			sourceTree = "<group>";
 		};
+		B47CE4F725E0E9AA00D851E6 /* Macro(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				B47CE4FB25E0EAED00D851E6 /* MZMacro.h */,
+			);
+			path = "Macro(宏)";
+			sourceTree = "<group>";
+		};
 		B489121925B0132300EF10E7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,14 +524,25 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		B489121A25B0133000EF10E7 /* Tool */ = {
+		B489121A25B0133000EF10E7 /* Tool(工具) */ = {
 			isa = PBXGroup;
 			children = (
 				B42A0DD1246D34C400C2F9A9 /* MZAuthentication */,
 				B42A0DC3246D287700C2F9A9 /* MZVersionControl */,
 				B41900B7248233A6008D2B34 /* MZWebSocketManager */,
 			);
-			path = Tool;
+			path = "Tool(工具)";
+			sourceTree = "<group>";
+		};
+		B49ACE4D25E4AAFD00051EF9 /* MZListMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B49ACE5025E4AB4D00051EF9 /* MZListMenuTableVC.h */,
+				B49ACE4E25E4AB4D00051EF9 /* MZListMenuTableVC.m */,
+				B49ACE4F25E4AB4D00051EF9 /* MZListMenuVC.h */,
+				B49ACE5125E4AB4D00051EF9 /* MZListMenuVC.m */,
+			);
+			path = MZListMenu;
 			sourceTree = "<group>";
 		};
 		B49E99A425C7A4B0000B5D3F /* UIButton */ = {
@@ -834,7 +852,6 @@
 				B43B5E38246FB8130059E663 /* NSString+AES256.m in Sources */,
 				B43B5E3A246FB8130059E663 /* UITableViewCell+CardCell.m in Sources */,
 				B49E99B525C7AAE4000B5D3F /* UIDevice+MZDeviceExtension.m in Sources */,
-				B43B5E66246FC16B0059E663 /* MZListMenuTableVC.m in Sources */,
 				B44463BB25C8F6BD00981A66 /* MZSliderVC.m in Sources */,
 				B43B5E5C246FBFBA0059E663 /* MZListMenuItem.m in Sources */,
 				B42A0DD4246D34DA00C2F9A9 /* MZAuthentication.m in Sources */,
@@ -849,11 +866,12 @@
 				B49E99AE25C7A899000B5D3F /* UIColor+MZHexExtension.m in Sources */,
 				B43B5E49246FB9970059E663 /* MZRadarChartView.m in Sources */,
 				B42A0DBF246D23BB00C2F9A9 /* MZCodeVC.m in Sources */,
-				B43B5E63246FC0DE0059E663 /* MZListMenuVC.m in Sources */,
 				B42A0D8C246CE3FB00C2F9A9 /* main.m in Sources */,
+				B49ACE5225E4AB4D00051EF9 /* MZListMenuTableVC.m in Sources */,
 				B4CD2E5D25C3F9B600493321 /* MZSliderView.m in Sources */,
 				B42A0DDE246D395300C2F9A9 /* MZTopToastView.m in Sources */,
 				B42A0DD7246D36ED00C2F9A9 /* MZAuthenticationVC.m in Sources */,
+				B49ACE5325E4AB4D00051EF9 /* MZListMenuVC.m in Sources */,
 				B42A0DD0246D2DED00C2F9A9 /* MZPageControlVC.m in Sources */,
 				B42A0D7E246CE3F000C2F9A9 /* SceneDelegate.m in Sources */,
 				B489122125B023D600EF10E7 /* MZCodeScanVC.m in Sources */,

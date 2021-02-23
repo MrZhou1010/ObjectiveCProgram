@@ -24,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param fontSize 原来的字号大小
 + (UIFont *)boldFontSize:(CGFloat)fontSize;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

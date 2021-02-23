@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"二维码扫描";
+    self.navigationItem.title = @"二维码和条形码";
     [self setupUI];
 }
 

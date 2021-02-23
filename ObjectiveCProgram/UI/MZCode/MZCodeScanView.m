@@ -9,10 +9,6 @@
 #import "MZCodeScanView.h"
 #import "MZCodeScanTool.h"
 
-#ifndef MZNotificationDefault
-#define MZNotificationDefault [NSNotificationCenter defaultCenter]
-#endif
-
 @interface MZCodeScanView ()
 
 /** 动画线条 */
@@ -130,8 +126,8 @@
         [myCode addTarget:self action:@selector(myCodeClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:myCode];
     }
-    [MZNotificationDefault addObserver:self selector:@selector(appWillEnterBackground) name:UIApplicationWillResignActiveNotification object:nil];
-    [MZNotificationDefault addObserver:self selector:@selector(appWillEnterForeground) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillEnterBackground) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillEnterForeground) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 /// 绘制扫描区域
@@ -270,7 +266,7 @@
 - (void)dealloc {
     [self stopScanAnimation];
     [self handledResultsOfScan];
-    [MZNotificationDefault removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

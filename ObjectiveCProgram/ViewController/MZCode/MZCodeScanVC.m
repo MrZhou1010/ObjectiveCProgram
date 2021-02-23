@@ -9,6 +9,7 @@
 #import "MZCodeScanVC.h"
 #import "MZQRCodeVC.h"
 #import "MZCode.h"
+#import "MZMacro.h"
 
 @interface MZCodeScanVC ()
 
@@ -39,31 +40,34 @@
     self.scanView.isShowMyCode = YES;
     self.scanView.tipDescription = @"将二维码放于框内\n即可自动扫描";
     [self.view addSubview:self.scanView];
-    __weak typeof(self) weakSelf = self;
+    @mz_weakify(self)
     self.scanView.codeScanBlock = ^{
+        @mz_strongify(self)
         MZQRCodeVC *qrCodeVC = [[MZQRCodeVC alloc] init];
         qrCodeVC.modalPresentationStyle = UIModalPresentationFullScreen;
-        [weakSelf.navigationController presentViewController:qrCodeVC animated:YES completion:nil];
+        [self.navigationController presentViewController:qrCodeVC animated:YES completion:nil];
     };
     self.scanView.flashSwitchBlock = ^(BOOL open) {
         NSLog(@"闪光灯状态:%d", open);
     };
     self.scanTool = [[MZCodeScanTool alloc] initWithPreview:preview andScanFrame:self.scanView.scanRect];
     self.scanTool.scanFinishedBlock = ^(NSString *scanString) {
+        @mz_strongify(self)
         NSLog(@"扫描结果:%@", scanString);
-        [weakSelf.scanTool sessionStopRunning];
+        [self.scanTool sessionStopRunning];
     };
     self.scanTool.monitorLightBlock = ^(float brightness) {
+        @mz_strongify(self)
         NSLog(@"当前亮度:%lf", brightness);
         if (brightness < -2.0) {
             // 环境太暗,显示闪光灯开关按钮
-            [weakSelf.scanView showFlashSwitch:YES];
+            [self.scanView showFlashSwitch:YES];
         } else if (brightness > 0) {
             // 环境亮度可以,且闪光灯处于关闭状态时,隐藏闪光灯开关按钮
-            if (weakSelf.scanView.flashOpen) {
-                [weakSelf.scanView showFlashSwitch:YES];
+            if (self.scanView.flashOpen) {
+                [self.scanView showFlashSwitch:YES];
             } else {
-                [weakSelf.scanView showFlashSwitch:NO];
+                [self.scanView showFlashSwitch:NO];
             }
         }
     };
