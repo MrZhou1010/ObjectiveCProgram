@@ -50,10 +50,11 @@
 #define RGBA(r, g, b, a) [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
 #define RGB(r, g, b) RGBA(r, g, b, 1.0f)
 #define HexColorA(hex, a) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0f green:((float)((hex & 0xFF00) >> 8)) / 255.0f blue:((float)(hex & 0xFF)) / 255.0f alpha:a]
-#define HexColor(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0f green:((float)((hex & 0xFF00) >> 8)) / 255.0f blue:((float)(hex & 0xFF)) / 255.0f alpha:1.0f]
+#define HexColor(hex) HexColorA(hex, 1.0f)
 #define MZRandomColor RGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 #pragma mark - 字体
+#define MZFont(fontSize) [UIFont systemFontOfSize:fontSize]
 
 #pragma mark - 获取图片资源
 #define MZGetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@", imageName]]
@@ -61,21 +62,24 @@
 #pragma mark - mainBundle
 /// 获取mainBundle
 #define MZMainBundle [NSBundle mainBundle]
-/// 获取BundlePath
+/// 获取bundlePath
 #define MZBundlePath [MZMainBundle bundlePath]
 
 /// App版本号
 #define MZAppVersion [[MZMainBundle infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
+/// 系统版本号
+#define MZSystemVersion [[UIDevice currentDevice] systemVersion]
+
 /// 获取沙盒路径
 #define MZHomePath NSHomeDirectory()
-/// 获取Temp路径
+/// 获取沙盒temp路径
 #define MZTempPath NSTemporaryDirectory()
-/// 获取沙盒Document路径
+/// 获取沙盒document路径
 #define MZDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-/// 获取沙盒Cache路径
+/// 获取沙盒cache路径
 #define MZCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-/// 文件路径Library/Caches
+/// 文件路径library/caches
 #define MZFileCachePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
 
 #pragma mark - 弱引用和强引用
@@ -120,7 +124,7 @@
 #pragma mark - 获取通知中心
 #define MZNotificationCenter [NSNotificationCenter defaultCenter]
 
-#pragma mark - UserDefaults
+#pragma mark - userDefaults
 #define MZUserDefaults [NSUserDefaults standardUserDefaults]
 
 #pragma mark - 开发Log

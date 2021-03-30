@@ -46,14 +46,14 @@
     [btn1 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn2.frame = CGRectMake(175.0, 120.0, 60.0, 30.0);
+    btn2.frame = CGRectMake(155.0, 120.0, 60.0, 30.0);
     btn2.tag = 11;
     btn2.backgroundColor = [UIColor redColor];
     [btn2 setTitle:@"view2" forState:UIControlStateNormal];
     [btn2 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
     UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn3.frame = CGRectMake(345.0, 120.0, 60.0, 30.0);
+    btn3.frame = CGRectMake(305.0, 120.0, 60.0, 30.0);
     btn3.tag = 11;
     btn3.backgroundColor = [UIColor redColor];
     [btn3 setTitle:@"view3" forState:UIControlStateNormal];

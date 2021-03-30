@@ -23,7 +23,6 @@
 }
 
 - (void)setupUI {
-    self.view.backgroundColor = [UIColor whiteColor];
     UIButton *successbutton = [UIButton buttonWithType:UIButtonTypeCustom];
     successbutton.frame = CGRectMake(50.0, 100.0, 120.0, 50.0);
     [successbutton setTitle:@"成功" forState:UIControlStateNormal];
